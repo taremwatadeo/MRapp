@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="tadz.example.com.musawo.HomeFragment"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:background="@mipmap/comp">
+
+    <Button
+        android:id="@+id/add_patient"
+        android:text="@string/button1"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="100sp"
+        android:layout_alignParentBottom="true"
+        android:onClick="addpatientButtonListener"/>
+    <Button
+        android:id="@+id/update_patient"
+        android:text="@string/button2"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="100sp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:onClick="updatepatientButtonListener"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="100sp"
+        android:id="@+id/pdelete_button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/button_delete"
+        android:onClick="deletepatientButtonListener"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/add_patient">
+
+   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewtext"
+        android:textSize="25sp"/>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="tadz.example.com.musawo.Addpatient"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:text="@string/patient_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:id="@+id/ptextview"/>
+    <EditText
+        android:inputType="textPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pedittext"
+        android:layout_below="@+id/ptextview"/>
+    <TextView
+        android:id="@+id/ptextview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/patient_age"
+        android:textSize="25sp"
+        android:layout_marginTop="@dimen/abc_action_bar_content_inset_material"
+        android:layout_below="@+id/pedittext"/>
+    <EditText
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pedittext1"
+        android:layout_below="@+id/ptextview1"/>
+    <TextView
+        android:id="@+id/ptextview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/disease"
+        android:textSize="25sp"
+        android:layout_marginTop="@dimen/abc_action_bar_content_inset_material"
+        android:layout_below="@+id/pedittext1"/>
+
+    <EditText
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pedittext2"
+        android:layout_below="@+id/ptextview2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ptextview3"
+        android:text="@string/prescription"
+        android:textSize="25sp"
+        android:layout_marginTop="@dimen/abc_action_bar_content_inset_material"
+        android:layout_below="@+id/pedittext2"/>
+
+    <EditText
+        android:inputType="textLongMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pedittext3"
+        android:layout_below="@+id/ptextview3"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ptextview4"
+        android:text="@string/returndate"
+        android:textSize="25sp"
+        android:layout_marginTop="@dimen/abc_action_bar_content_inset_material"
+        android:layout_below="@+id/pedittext3"/>
+    <EditText
+        android:inputType="date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pedittext4"
+        android:layout_below="@+id/ptextview4"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ptextview5"
+        android:text="@string/drug"
+        android:textSize="25sp"
+        android:layout_marginTop="@dimen/abc_action_bar_content_inset_material"
+        android:layout_below="@+id/pedittext4"/>
+    <EditText
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pedittext5"
+        android:layout_below="@+id/ptextview5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ptextview6"
+        android:text="@string/remark"
+        android:textSize="25sp"
+        android:layout_marginTop="@dimen/abc_action_bar_content_inset_material"
+        android:layout_below="@+id/pedittext5"/>
+
+    <EditText
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pedittext6"
+        android:layout_below="@+id/ptextview6"/>
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:textSize="25sp"
+        android:background="@color/background_material_dark"
+        android:layout_below="@+id/pedittext6"
+        android:layout_marginTop="15sp"/>
+
+</RelativeLayout>
+</ScrollView>
+
