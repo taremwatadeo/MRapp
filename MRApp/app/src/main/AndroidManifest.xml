@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="example.com.mrapp" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/bb"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:icon="@mipmap/bb">
+        </activity>
+        <activity
+            android:name=".LoginScreen"
+            android:label="@string/title_activity_login_screen"
+            android:icon="@mipmap/login_img">
+
+        </activity>
+        <activity
+            android:name=".RegistrationScreen"
+            android:label="@string/title_activity_registration_screen"
+            android:icon="@mipmap/register"
+            android:parentActivityName=".LoginScreen">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="example.com.mrapp.LoginScreen" />
+        </activity>
+    </application>
+
+</manifest>

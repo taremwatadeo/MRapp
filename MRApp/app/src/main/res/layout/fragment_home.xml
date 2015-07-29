@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7FFFD4"
+    android:paddingLeft="30sp"
+    android:paddingRight="30sp"
+    tools:context="example.com.mrapp.HomeFragment">
+
+    <TextView
+        android:id="@+id/texthome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WELCOME TO MRApp"
+        android:textSize="30sp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_below = "@+id/texthome"
+        android:text="Feel Free To Contact Us:\n0702467771"
+        android:layout_width="wrap_content"
+         android:layout_marginTop="30sp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/browneyes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="30sp"
+        android:layout_marginBottom="10sp"
+        android:src="@drawable/browneyes" />
+</RelativeLayout>
